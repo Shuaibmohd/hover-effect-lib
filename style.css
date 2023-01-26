@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Fasthand', cursive;
+    padding: 30px;
+    height: 100vh;
+}
+
+.distortion{
+    height: 540px;
+    width: 440px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 2rem;
+    max-width: 40ch;
+}
+
+.landing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+@media(max-width: 869px) {
+    .landing{
+        flex-direction:column-reverse;
+        justify-content: center;
+        
+    }
+    h1{
+        margin: 1rem 0;
+    }
+    h1,p{
+        text-align: center;
+    }
+}
+
+
+.landing{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.distortion{
+    width: 640px;
+    height: 920px;
+    align-self: flex-end;
+}
+
+.intro{
+    align-self: center;
+}
+
+.intro h1{
+    font-size: 50px;
+}
+.intro p{
+    font-size: 25px;
+}
